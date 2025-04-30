@@ -20,7 +20,7 @@
                         </div> --}}
 
                         <input class="form-control border-0 fw-bolder fs-6 search-input py-3 rounded-4" type="search" name="search"
-                            placeholder="Cari tanaman" aria-label="Search" />
+                            placeholder="Cari tanaman" aria-label="Search" value="{{ request('search') }}"/>
                     </div>
                     <button class="btn btn-success px-4 rounded-4" type="submit">
                         <i class="fa fa-search text-white"></i>

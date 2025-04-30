@@ -38,12 +38,6 @@
 
                             </div>
                             <div class="col-auto">
-                                <a class="btn app-btn-secondary" href="#">
-                                    <i class="fa fa-download me-1"></i>
-                                    Download QR
-                                </a>
-                            </div>
-                            <div class="col-auto">
                                 <a class="btn app-btn-primary" href="{{ route('category.create') }}">
                                     <i class="fa fa-plus me-1"></i>
                                     Tambah Data
@@ -67,7 +61,7 @@
                             <tbody>
                                 @foreach ($datas as $data)
                                     <tr>
-                                        <td class="cell">{{ $loop->iteration }}</td>
+                                        <td class="cell">{{ $loop->iteration + $datas->firstItem() - 1 }}</td>
                                         <td class="cell">{{ $data->name }}</td>
                                         <td class="cell">
                                             <a href="{{ route('category.edit', $data->id) }}"

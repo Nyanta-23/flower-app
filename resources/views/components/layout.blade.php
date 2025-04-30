@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/style/style.css">
     <script defer src="/theme/plugins/fontawesome/js/all.min.js"></script>
 
+    @laravelPWA
 </head>
 
 <body class="overflow-y-auto mobile-wrapper">
@@ -30,6 +31,8 @@
         // localStorage.getItem("token") == null ? window.location.href = "/" : "";
 
         const token = localStorage.getItem("token");
+        const favorites = localStorage.getItem("favorites");
+
         // if token empty, this function will call an API to generate token, so the DB will remember who you are
         if (token == null) {
             fetch("{{ route(name: 'get-new-device-id') }}", {
@@ -45,7 +48,27 @@
                 })
                 .catch(error => console.error('Error:', error));
         }
-        console.log("token", token)
+
+        const fetchFavorites = () => {
+            const urlGetFavorite = "{{ route('get-favorite', '*') }}".replace("*", token)
+            // fetch all favorites
+            fetch(urlGetFavorite, {
+                    method: "GET",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    localStorage.setItem("favorites", JSON.stringify(data.data || []))
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchFavorites()
+        });
     </script>
     @stack('scripts')
 </body>

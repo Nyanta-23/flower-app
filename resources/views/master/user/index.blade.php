@@ -62,7 +62,7 @@
                             <tbody>
                                 @foreach ($datas as $data)
                                     <tr>
-                                        <td class="cell">{{ $loop->iteration }}</td>
+                                        <td class="cell">{{ $loop->iteration + $datas->firstItem() - 1 }}</td>
                                         <td class="cell">{{ $data->name }}</td>
                                         <td class="cell">{{ $data->email }}</td>
                                         <td class="cell">

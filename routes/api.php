@@ -10,5 +10,7 @@ Route::get('/user', function (Request $request) {
 
 Route::get('/getNewDeviceId', [GeneralController::class, "getNewDeviceId"])->name('get-new-device-id');
 Route::post('/addFavorite', [GeneralController::class, "addFavorite"])->name('add-favorite');
-Route::post('/getFavorite', [GeneralController::class, "getFavorite"])->name('get-favorite');
+Route::post('/deleteFavorite', [GeneralController::class, "deleteFavorite"])->name('delete-favorite');
+Route::get('/getFavorite/{id}', [GeneralController::class, "getFavorite"])->name('get-favorite');
 Route::post('/scan', [GeneralController::class, "scan"])->name('scan');
+Route::get('/getScans/{id}', [GeneralController::class, "getScans"])->name('get-scans');

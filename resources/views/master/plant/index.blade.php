@@ -72,7 +72,7 @@
                             <tbody>
                                 @foreach ($plants as $plant)
                                     <tr>
-                                        <td class="cell">{{ $loop->iteration }}</td>
+                                        <td class="cell">{{ $loop->iteration + $plants->firstItem() - 1 }}</td>
                                         <td class="cell">{{ $plant->name }}</td>
                                         <td class="cell">{{ $plant->category->name }}</td>
                                         <td class="cell">{!! Str::limit($plant->description, 50) !!}</td>

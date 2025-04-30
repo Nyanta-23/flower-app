@@ -43,7 +43,7 @@ Route::group(['middleware' => 'auth'], function () {
     })->name('profile');
 
     Route::get('/profile/edit', function () {
-        return view('profile-edit');
+        return view('profile.edit');
     })->name('profile.edit');
 
     Route::prefix('plant')->group(function () {

@@ -59,7 +59,7 @@
                             <tbody>
                                 @foreach ($datas as $item)
                                     <tr>
-                                        <td class="cell">{{ $loop->iteration }}</td>
+                                        <td class="cell">{{ $loop->iteration + $datas->firstItem() - 1 }}</td>
                                         <td class="cell">{{ $item->plant->name }}</td>
                                         <td class="cell">{{ $item->plant->category->name }}</td>
                                         <td class="cell">{{ $item->created_at }}</td>

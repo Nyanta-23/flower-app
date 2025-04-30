@@ -15,9 +15,9 @@
 
                 <div class="mt-2 col-4 home-icons">
                     <div class="d-flex justify-content-end gap-2 gap-md-4">
-                        <a href="#" class="d-block">
+                        {{-- <a href="#" class="d-block">
                             <img src="{{ URL('icons/bell.svg') }}" class="w-100" alt="bell" />
-                        </a>
+                        </a> --}}
                         <a href="/favorite" class="d-block">
                             <img src="{{ URL('icons/heart.svg') }}" class="w-100" alt="heart" />
                         </a>

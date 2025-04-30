@@ -28,11 +28,10 @@ class GeneralController extends Controller
         $data = [
             'device_id' => $request->device_id,
             'plant_id' => $request->plant_id,
+            'device_name' => $request->plant_id,
         ];
 
-        $store = PlantFavorite::where('device_id', $request->device_id)
-            ->where('plant_id', $request->plant_id)
-            ->first();
+        PlantFavorite::updateOrCreate($data);
 
         return response()->json([
             'status' => true,
@@ -41,12 +40,35 @@ class GeneralController extends Controller
         ]);
     }
 
-    function getFavorite(Request $request)
+    function deleteFavorite(Request $request)
+    {
+        $request->validate([
+            'device_id' => 'required',
+            'plant_id' => 'required',
+        ]);
+
+        $data = [
+            'device_id' => $request->device_id,
+            'plant_id' => $request->plant_id,
+        ];
+
+        PlantFavorite::where('device_id', $request->device_id)
+            ->where('plant_id', $request->plant_id)
+            ->delete();
+
+        return response()->json([
+            'status' => true,
+            'message' => "Berhasil menghapus dari daftar favorit",
+            'data' => $data,
+        ]);
+    }
+
+    function getFavorite(Request $request, $id)
     {
         $data = PlantFavorite::with('plant.category', 'plant.images')
-            ->where('device_id', $request->device_id)
+            ->where('device_id', $id)
             ->orderBy('created_at', 'desc')
-            ->paginate(10);
+            ->get();
 
         return response()->json([
             'status' => true,
@@ -78,6 +100,20 @@ class GeneralController extends Controller
             'status' => true,
             'message' => "Berhasil menambahkan ke scan",
             'data' => $plant,
+        ]);
+    }
+
+    function getScans(Request $request, $id)
+    {
+        $data = Scans::with('plant.category', 'plant.images')
+            ->where('device_id', $id)
+            ->orderBy('created_at', 'desc')
+            ->get();
+
+        return response()->json([
+            'status' => true,
+            'message' => "Berhasil mendapatkan data scan",
+            'data' => $data,
         ]);
     }
 }

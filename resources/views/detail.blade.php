@@ -18,12 +18,12 @@
                         <h1 class="fw-bold fs-3 mb-0">
                             {{ $data->name }}
                         </h1>
-                        <div class="d-flex align-items-center gap-4">
-                            <div>
-                                <img src="{{ URL('icons/sound-green-muted.svg') }}" alt="..." />
+                        <div class="d-flex align-items-center gap-1">
+                            <div id="btn-speak" class="btn btn-link">
+                                <img id="img-speak" src="{{ URL('icons/sound-green-muted.svg') }}" alt="..." />
                             </div>
-                            <div>
-                                <img src="{{ URL('icons/love-green.svg') }}" alt="..." />
+                            <div id="btn-love" class="btn btn-link">
+                                <img id="img-love" src="{{ URL('icons/love-green.svg') }}" alt="..." />
                             </div>
                         </div>
                     </div>
@@ -38,6 +38,19 @@
     <script>
         const btnSpeak = document.getElementById('btn-speak');
         const textToSpeak = `{!! strip_tags($data->description) !!}`;
+        const plantId = "{{ $data->id }}";
+        const btnLove = document.getElementById('btn-love');
+        const imgLove = document.getElementById('img-love')
+        const checkLikeStatus = () => {
+            const favorites = JSON.parse(localStorage.getItem("favorites"));
+            const isFavorite = favorites.some(favorite => favorite.plant_id == plantId);
+            console.log("checking", favorites, isFavorite)
+            if (isFavorite) {
+                imgLove.src = "{{ URL('icons/love-red.svg') }}"
+            } else {
+                imgLove.src = "{{ URL('icons/love-green.svg') }}"
+            }
+        }
 
         btnSpeak.addEventListener('click', (el) => {
             const utterance = new SpeechSynthesisUtterance(textToSpeak);
@@ -46,11 +59,43 @@
 
             if (speechSynthesis.speaking) {
                 speechSynthesis.cancel(); // Stop any ongoing speech
-                img.src = "{{ URL('icons/sound-green.svg') }}";
+                img.src = "{{ URL('icons/sound-green-muted.svg') }}";
             } else {
                 speechSynthesis.speak(utterance);
-                img.src = "{{ URL('icons/sound-green-muted.svg') }}";
+                img.src = "{{ URL('icons/sound-green.svg') }}";
             }
         });
+
+        btnLove.onclick = () => {
+            const img = imgLove;
+            const isAdd = img.src.includes('love-green');
+            const url = isAdd ? '/api/addFavorite' : '/api/deleteFavorite';
+
+            fetch(url, {
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                    },
+                    body: JSON.stringify({
+                        plant_id: plantId,
+                        device_id: token,
+                    })
+                })
+                .then(response => response.json())
+                .then(async data => {
+                    await fetchFavorites();
+                    checkLikeStatus();
+
+                    if (isAdd) {
+                        img.src = "{{ URL('icons/love-red.svg') }}"
+                    } else {
+                        img.src = "{{ URL('icons/love-green.svg') }}"
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        };
+
+        checkLikeStatus()
     </script>
 </x-layout>

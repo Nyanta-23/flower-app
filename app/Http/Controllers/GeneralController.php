@@ -23,7 +23,7 @@ class GeneralController extends Controller
                     ->orWhereLike('watering_needs', "%$keyword%")
                     ->orWhereLike('sunlight_needs', "%$keyword%")
                     ->orWhereLike('soil_level', "%$keyword%")
-                    ->orWhereLike('temperature_range', "%$keyword%")
+                    ->orWhereLike('temprature_range', "%$keyword%")
                     ->orWhereLike('use_cases', "%$keyword%");
             });
         }

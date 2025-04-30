@@ -9,9 +9,8 @@
         </div>
         <div class="col-12">
             <div class="fw-normal fs-5 text-center mt-3">
-                <p id="scan-nav-detail">
-                    Lorem ipsum dolor sit amet consectetur. Sem pretium turpis quis ut condimentum odio nisl orci. Tempor enim maecenas hac potenti.....
-                </p>
+                <h5 id="scan-nav-title" class="text-bold"></h6>
+                <p id="scan-nav-detail"></p>
                 <a class="btn btn-sm btn-secondary px-3 rounded-4 me-2" href="/">
                     &larr; Kembali
                 </a>

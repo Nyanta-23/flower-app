@@ -21,4 +21,10 @@ class PlantFavorite extends Model
     protected $guarded = ['id'];
     // protected $fillable = [];
     // protected $hidden = [];
+
+
+    function plant()
+    {
+        return $this->belongsTo(Plant::class, 'plant_id');
+    }
 }
