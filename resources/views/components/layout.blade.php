@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/style/style.css">
     <script defer src="/theme/plugins/fontawesome/js/all.min.js"></script>
 
-    @laravelPWA
+    {{-- @laravelPWA --}}
 </head>
 
 <body class="overflow-y-auto mobile-wrapper">

@@ -5,7 +5,7 @@
 
     <section class="mobile-wrapper">
         <div class="container">
-            <x-back headingTitle="Detail" linkTo="/" />
+            <x-back headingTitle="Detail" linkTo="{{ route('flower') }}" />
             <div class="row justify-content-center px-0 position-relative min-h-screen">
                 <div id="detail-img" class=" height-image">
                     <img src="{{ URL('images/tanaman-1.png') }}" alt="..."
