@@ -1,8 +1,8 @@
-<section id="navbar" class="container z-1">
+<section id="navbar" class="container z-1 d-flex justify-content-center">
 
-    <div class="row border-top mt-5 py-2 rounded-5 shadow-navigation bg-light mt-lg py-0 bottom-nav mb-3 mx-2">
+    <div class="row border-top mt-5 py-2 rounded-5 shadow-navigation bg-light mt-lg bottom-nav mb-3 mx-sm-2">
 
-        <div class="col-12">
+        <div class="col-sm-12">
 
             <ul class="z-10 d-flex justify-content-between align-items-center px-0 py-2 mb-2 gap-1">
                 <li class="list-group-item mx-auto">
