@@ -88,7 +88,8 @@
                                         <td class="cell">
                                             <a href="{{ route('plant.download-single', $plant) }}" target="__blank"
                                                 class="btn btn-sm btn-primary text-white"
-                                                download="QR-{{ $plant->slug }}.png">
+                                                download="QR-{{ $plant->slug }}.png"
+                                                >
                                                 <i class="fa fa-download"></i> QR
                                             </a>
                                             <a href="{{ route('show-plant', $plant->slug) }}"

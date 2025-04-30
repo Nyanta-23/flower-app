@@ -51,7 +51,7 @@ function startScanner(cameraId) {
 
   const size = Math.floor(Math.min(width, height) * 0.7);
 
-  console.log(size)
+  // console.log(size)
 
   html5QrCode.start(
     cameraId,

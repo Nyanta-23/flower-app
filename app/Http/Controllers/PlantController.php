@@ -117,9 +117,10 @@ class PlantController extends Controller
      */
     public function show(string $id)
     {
+
         $data = Plant::with('category')->findOrFail($id);
         $images = $data->images()->get();
-        
+
         return view('show-plant', [
             'data' => $data,
             'images' => $images,
