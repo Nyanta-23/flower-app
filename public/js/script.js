@@ -24,7 +24,6 @@ if (window.location.pathname == '/detail') {
     // detailImg.getElementsByTagName('img')[0].classList.toggle('position-absolute');
     // detailImg.getElementsByTagName('img')[0].classList.toggle('position-relative');
   });
-
 }
 
 

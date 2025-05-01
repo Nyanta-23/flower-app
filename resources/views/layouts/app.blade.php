@@ -46,12 +46,12 @@
                                     href="#" role="button" aria-expanded="false"><img
                                         src="/theme/images/user.png" alt="user profile" /></a>
                                 <ul class="dropdown-menu" aria-labelledby="user-dropdown-toggle">
-                                    {{-- <li>
-                                        <a class="dropdown-item" href="{{ route('profile.edit') }}">Profile</a>
-                                    </li> 
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('profile') }}">Profile</a>
+                                    </li>
                                     <li>
                                         <hr class="dropdown-divider" />
-                                    </li> --}}
+                                    </li>
                                     <li>
                                         <a class="dropdown-item" href="{{ route('logout') }}">Log Out</a>
                                     </li>
@@ -77,13 +77,18 @@
             </div>
         </footer>
     </div>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/theme/plugins/popper.min.js"></script>
     <script src="/theme/plugins/bootstrap/js/bootstrap.min.js"></script>
-
+    
     <script src="/theme/plugins/chart.js/chart.min.js"></script>
     {{-- <script src="/theme/js/index-charts.js"></script> --}}
     <script src="/theme/js/app.js"></script>
+
+    {{-- <script src="sweetalert2.min.js"></script> --}}
+    {{-- <link rel="stylesheet" href="sweetalert2.min.css"> --}}
+    <script src="/js/script-admin.js"></script>
     @stack('scripts')
 </body>
 

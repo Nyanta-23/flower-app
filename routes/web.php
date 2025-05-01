@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\NewPasswordController;
 use App\Http\Controllers\GeneralController;
 use App\Http\Controllers\PlantCategoryController;
 use App\Http\Controllers\PlantController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ScanController;
 use App\Http\Controllers\UserController;
 
@@ -38,13 +39,20 @@ Route::group(['middleware' => 'auth'], function () {
         return view('dashboard');
     })->name('dashboard');
 
-    Route::get('/profile', function () {
-        return view('profile');
-    })->name('profile');
+    // Route::get('/profile', function () {
+    //     return view('profile');
+    // })->name('profile');
 
-    Route::get('/profile/edit', function () {
-        return view('profile.edit');
-    })->name('profile.edit');
+    // Route::get('/profile/edit', function () {
+    //     return view('profile.edit');
+    // })->name('profile.edit');
+
+    Route::prefix('profile')->group(function () {
+        Route::get('/', [ProfileController::class, 'index'])->name('profile');
+        Route::get('/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+        Route::post('/update', [ProfileController::class, 'update'])->name('profile.update');
+        Route::post('/delete', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    });
 
     Route::prefix('plant')->group(function () {
         Route::get('/download', [PlantController::class, 'download'])->name('plant.download');
@@ -73,7 +81,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/{id}', [ScanController::class, 'show'])->name('scan-history.show');
     });
 
-    
+
     Route::prefix('user')->group(function () {
         Route::get('/', [UserController::class, 'index'])->name('user');
         Route::get('/create', [UserController::class, 'create'])->name('user.create');
