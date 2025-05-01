@@ -1,10 +1,10 @@
-<section id="navbar" class="container z-1">
+<section id="navbar" class="z-1">
 
-    <div class="row border-top mt-5 py-2 rounded-5 shadow-navigation bg-light mt-lg py-0 bottom-nav mb-3 mx-2">
+    <div class="row">
 
         <div class="col-12">
 
-            <ul class="z-10 d-flex justify-content-between align-items-center px-0 py-2 mb-2 gap-1">
+            <ul class="z-10 d-flex justify-content-between align-items-center px-0 py-3 gap-1 border-top rounded-top-5 shadow-navigation bg-light bottom-nav w-100 mb-0 pb-4">
                 <li class="list-group-item mx-auto">
                     <a href="/"
                         class="{{ request()->path() === '/' ? 'navigation-link-active' : 'navigation-link' }} text-decoration-none rounded-pill px-3 py-2 d-flex align-self-center justify-content-center gap-2 px-md-4 py-md-3">
