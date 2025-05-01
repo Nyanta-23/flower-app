@@ -8,7 +8,7 @@
             <x-back headingTitle="Detail" linkTo="{{ route('flower') }}" />
             <div class="row justify-content-center px-0 position-relative min-h-screen">
                 <div id="detail-img" class=" height-image">
-                    <img src="{{ URL('images/tanaman-1.png') }}" alt="..."
+                    <img src="{{ $data->images->count() > 0 ? $data->images[0]->image : URL('images/tanaman-1.png') }}" alt="..."
                         class="img-fluid unzoom-image object-fit-cover" />
                 </div>
 

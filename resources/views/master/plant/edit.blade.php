@@ -129,6 +129,7 @@
 
         <script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.5/dist/purify.min.js"></script>
         <script>
             const images = {!! $data->images !!}
             console.log(images)
@@ -137,8 +138,9 @@
             });
 
             quill.on('text-change', function() {
-                console.log(quill.root.innerHTML);
-                document.querySelector('#description').value = quill.root.innerHTML;
+                const sanitized = DOMPurify.sanitize(quill.root.innerHTML)
+                console.log(sanitized);
+                document.querySelector('#description').value = sanitized;
             });
 
             $(function() {

@@ -64,7 +64,7 @@
                                     <th class="cell">No</th>
                                     <th class="cell">Nama</th>
                                     <th class="cell">Kategori</th>
-                                    <th class="cell">Deskripsi</th>
+                                    {{-- <th class="cell">Deskripsi</th> --}}
                                     <th class="cell">Gambar</th>
                                     <th class="cell">Aksi</th>
                                 </tr>
@@ -75,7 +75,9 @@
                                         <td class="cell">{{ $loop->iteration + $plants->firstItem() - 1 }}</td>
                                         <td class="cell">{{ $plant->name }}</td>
                                         <td class="cell">{{ $plant->category->name }}</td>
-                                        <td class="cell">{!! Str::limit($plant->description, 50) !!}</td>
+                                        {{-- <td class="cell" style="min-width: 200px">
+                                            <textarea class="form-control" rows="4" style="width: 100%" disabled>{!! $plant->description !!}</textarea>
+                                        </td> --}}
                                         <td class="cell">
                                             <div class="d-flex flex-wrap gap-2" style="max-width: 300px;">
                                                 @foreach ($plant->images as $pi)

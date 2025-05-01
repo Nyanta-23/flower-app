@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\Plant;
 use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\Request;
+use Mews\Purifier\Facades\Purifier;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 use Str;
 
@@ -86,9 +87,10 @@ class PlantController extends Controller
             }
 
             $stored = Plant::create(array_merge(
-                $request->only('name', 'description', 'category_id', 'scientific_name', 'habitat', 'growth_rate', 'watering_needs', 'sunlight_needs', 'soil_level', 'temprature_range', 'use_cases'),
+                $request->only('name', 'category_id', 'scientific_name', 'habitat', 'growth_rate', 'watering_needs', 'sunlight_needs', 'soil_level', 'temprature_range', 'use_cases'),
                 [
                     'slug' => Str::slug($request->name, '-') . '-' . time(),
+                    'description' => Purifier::clean($request->description),
                 ]
             ));
 
@@ -174,9 +176,13 @@ class PlantController extends Controller
             }
 
             $plant = Plant::findOrFail($id);
-            $plant->update(
-                $request->only('name', 'description', 'category_id', 'scientific_name', 'habitat', 'growth_rate', 'watering_needs', 'sunlight_needs', 'soil_level', 'temprature_range', 'use_cases')
-            );
+            
+            $plant->update(array_merge(
+                $request->only('name', 'category_id', 'scientific_name', 'habitat', 'growth_rate', 'watering_needs', 'sunlight_needs', 'soil_level', 'temprature_range', 'use_cases'),
+                [
+                    'description' => Purifier::clean($request->description),
+                ]
+            ));
 
             if (isset($images)) {
                 $delete_old_images = $plant->images()->delete();
