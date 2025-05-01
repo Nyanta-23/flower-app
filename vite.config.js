@@ -17,8 +17,8 @@ import basicSsl from '@vitejs/plugin-basic-ssl'
 //     },
 // });
 
-const host = '192.168.21.190';
-const port = '5173';
+// const host = '192.168.21.190';
+// const port = '5173';
 
 export default defineConfig({
     plugins: [
@@ -32,16 +32,16 @@ export default defineConfig({
         }),
         // basicSsl()
     ],
-    server: {
-        // https: true,
-        // proxy: {
-        //     '^(?!(\/\@vite|\/resources|\/node_modules))': {
-        //         target: `http://${host}:${port}`,
-        //     }
-        // },
-        host,
-        port,
-        hmr: { host },
-    }
+    // server: {
+    //     // https: true,
+    //     // proxy: {
+    //     //     '^(?!(\/\@vite|\/resources|\/node_modules))': {
+    //     //         target: `http://${host}:${port}`,
+    //     //     }
+    //     // },
+    //     host,
+    //     port,
+    //     hmr: { host },
+    // }
 });
 

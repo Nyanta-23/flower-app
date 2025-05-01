@@ -66,26 +66,30 @@
                     <input id="password" name="password" type="password" class="form-control password"
                         placeholder="Password" required="required">
                     <x-input-error :messages="$errors->get('password')" class="mt-2" />
-                    <div class="extra mt-3 row justify-content-between">
-                        <div class="col-6">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="RememberPassword" name="remember">
-                                <label class="form-check-label" for="RememberPassword">
-                                    Remember me
-                                </label>
-                            </div>
-                        </div><!--//col-6-->
-                        <div class="col-6">
-                            <div class="forgot-password text-end">
-                                <a href="{{ route('password.request') }}">Forgot password?</a>
-                            </div>
-                        </div><!--//col-6-->
-                    </div><!--//extra-->
                 </div><!--//form-group-->
+                <div class="extra mt-3 row justify-content-between">
+                    <div class="col-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="RememberPassword"
+                                name="remember">
+                            <label class="form-check-label" for="RememberPassword">
+                                Remember me
+                            </label>
+                        </div>
+                    </div><!--//col-6-->
+                    <div class="col-6">
+                        <div class="forgot-password text-end">
+                            <a href="{{ route('password.request') }}">Forgot password?</a>
+                        </div>
+                    </div><!--//col-6-->
+                </div><!--//extra-->
                 <div class="text-center">
                     <button type="submit" class="app-btn-primary btn w-100 theme-btn mx-auto">
                         Log in
                     </button>
+                </div>
+                <div class="col-12 mt-1 fs-6">
+                    <a href="{{ route('register') }}">Don't Have Account?</a>
                 </div>
             </form>
         </div><!--//auth-form-container-->
