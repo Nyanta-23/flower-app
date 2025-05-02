@@ -1,9 +1,9 @@
 /* Navbar */
 #scan-navbar {
     position: fixed;
-    height: 100vh;
-    /* top: 0; */
+    height: 100%;
     bottom: 0;
+    left: 0;
     z-index: 999;
 }
 
