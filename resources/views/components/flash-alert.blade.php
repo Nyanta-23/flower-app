@@ -1,0 +1,1 @@
+<div class="flash-message" data-message="{{ $message }}" data-icon="{{ $icon }}"></div>

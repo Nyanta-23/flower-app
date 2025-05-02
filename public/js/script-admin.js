@@ -1,27 +1,53 @@
+const flashMessage = (function () {
+  const flashMessage = document.querySelectorAll('.flash-message');
 
-console.log('test');
-const popUp = function () {
-  const popupMessage = document.querySelectorAll('.popup');
+  if (flashMessage.length > 0) {
+    flashMessage.forEach(flash => {
 
-  if (popupMessage.length > 0) {
-    popupMessage.forEach(popup => {
-      Swal.fire({
-        title: popup.getAttribute('data-title') ?? 'Insert the title!',
-        text: popup.getAttribute('data-text') ?? 'Insert the text!',
-        icon: popup.getAttribute('data-icon') ?? "question",
-        confirmButtonText: 'Close'
-      })
-    })
+      const Toast = Swal.mixin({
+        toast: true,
+        position: "bottom-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+
+        didOpen: (toast) => {
+          toast.onmouseenter = Swal.stopTimer;
+          toast.onmouseleave = Swal.resumeTimer;
+          const timer = Swal.getPopup().querySelector("b");
+          timerInterval = setInterval(() => {
+            timer.textContent = `${Swal.getTimerLeft()}`;
+          }, 100);
+        },
+
+        willClose: () => {
+          clearInterval(timerInterval);
+        }
+
+      });
+      Toast.fire({
+        background: "#f3f4f6",
+        icon: flash.getAttribute('data-icon') ?? "question",
+        title: flash.getAttribute('data-message') ?? 'Insert the title Alert!',
+        showClass: {
+          popup: `animate__animated animate__fadeInUp animate__faster`
+        },
+        hideClass: {
+          popup: `animate__animated animate__fadeOutDown animate__slower`
+        }
+      });
+
+    });
   }
-}
+})();
 
 document.querySelectorAll('.confirmation').forEach(button => {
-
-  console.log(button);
 
   button.addEventListener('click', function (e) {
 
     const form = this.closest('form');
+
+    console.log(form);
 
     if (!form.reportValidity()) {
       return;

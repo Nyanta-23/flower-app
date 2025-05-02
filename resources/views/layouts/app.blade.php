@@ -53,7 +53,13 @@
                                         <hr class="dropdown-divider" />
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="{{ route('logout') }}">Log Out</a>
+                                        <form action="{{ route('logout') }}" method="post">
+                                            @csrf
+
+                                            <a class="dropdown-item confirmation"
+                                                data-text="Are you sure want to logout?" data-icon="question"
+                                                href="{{ route('logout') }}">Log Out</a>
+                                        </form>
                                     </li>
                                 </ul>
                             </div>
@@ -76,12 +82,18 @@
                 </small>
             </div>
         </footer>
+
+        @if (session('status'))
+            <x-flash-alert :message="session('status')['text']" :icon="session('status')['icon']" />
+        @endif
+
     </div>
-    
+
+    <script src="https://unpkg.com/alpinejs" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="/theme/plugins/popper.min.js"></script>
     <script src="/theme/plugins/bootstrap/js/bootstrap.min.js"></script>
-    
+
     <script src="/theme/plugins/chart.js/chart.min.js"></script>
     {{-- <script src="/theme/js/index-charts.js"></script> --}}
     <script src="/theme/js/app.js"></script>

@@ -54,10 +54,10 @@
             <x-primary-button
                 title="Are you sure want to update?">{{ __('Save') }}</x-primary-button>
 
-            @if (session('status') === 'profile-updated')
+            {{-- @if (session('status') === 'profile-updated')
                 <p x-data="{ show: true }" x-show="show" x-transition x-init="setTimeout(() => show = false, 2000)"
                     class="text-sm text-gray-600">{{ __('Saved.') }}</p>
-            @endif
+            @endif --}}
         </div>
     </form>
 </section>

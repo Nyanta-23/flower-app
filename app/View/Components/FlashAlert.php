@@ -6,17 +6,15 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class PopUp extends Component
+class FlashAlert extends Component
 {
     /**
      * Create a new component instance.
      */
     public function __construct(
-        public string $title,
-        public string $text,
-        public string $icon,
-    )
-    {
+        public string $message,
+        public string $icon
+    ) {
         //
     }
 
@@ -25,6 +23,6 @@ class PopUp extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.pop-up');
+        return view('components.flash-alert');
     }
 }
