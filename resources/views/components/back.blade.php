@@ -1,4 +1,4 @@
-<section id="heading-back" class="z-2 position-relative btn-back py-2 {{ in_array(request()->route()->uri(), ['detail']) ? '' : 'bg-white-cust' }} shadow-sm">
+<section id="heading-back" class="z-2 btn-back py-3 {{ in_array(request()->route()->uri(), ['detail']) ? '' : 'bg-white-cust' }} shadow-sm">
     <div class="row">
 
         <div class="col-auto">

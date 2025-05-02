@@ -90,7 +90,7 @@
 }
 
 .change-icon-to-favorite-white-navigation-active {
-    content: url("../icons/navbar/heart.svg") !important;
+    content: url("../icons/navbar/heart-white.svg") !important;
 }
 
 .navigation-link:hover .change-icon-to-home-white-navigation {
