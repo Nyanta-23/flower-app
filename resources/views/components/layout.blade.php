@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flower App | {{ $title }}</title>
 
-    @vite(['resources/scss/app.scss', 'resources/js/app.js'])
-    {{-- @vite(['resources/js/app.js']) --}}
+    {{-- @vite(['resources/scss/app.scss', 'resources/js/app.js']) --}}
+    @vite(['resources/js/app.js'])
 
 
     <link rel="stylesheet" href="/style/style.css">
