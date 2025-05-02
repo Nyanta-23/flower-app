@@ -31,7 +31,7 @@
                 <div class="col-12">
                     <div id="scanner" class="d-flex justify-content-center mx-3 position-relative">
                         <div id="reader"
-                            class="border rounded-4 mx-auto mx-md-0 d-flex align-items-center justify-content-center">
+                            class="border rounded-4 mx-auto mx-md-0 d-flex align-items-center justify-content-center z-0">
                         </div>
                         <div id="error-scanner" class="position-absolute top-50 end-25 z-1"></div>
                     </div>

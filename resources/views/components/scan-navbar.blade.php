@@ -1,6 +1,6 @@
 <section id="scan-navbar" class="d-none">
 
-    <div class="row rounded-5 rounded-bottom-0 shadow-navigation scan-result position-absolute bg-white bottom-0 start-0 py-5">
+    <div class="row rounded-5 rounded-bottom-0 shadow-navigation scan-result bg-white py-5">
 
         <div class="col-12">
             <div class="w-100">

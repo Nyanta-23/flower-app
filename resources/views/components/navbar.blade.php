@@ -4,8 +4,8 @@
 
         <div class="col-sm-12 d-flex justify-content-center">
 
-            <ul class="z-10 d-flex justify-content-between align-items-center px-0 py-3 gap-1 border-top rounded-top-5 shadow-navigation bg-light bottom-nav w-100 mb-0 pb-4">
-                <li class="list-group-item mx-auto">
+            <ul class="z-10 d-flex justify-content-between align-items-center px-0 py-3 gap-1 border-top rounded-top-5 shadow-navigation bg-light bottom-nav w-100 mb-0 pb-5 pb-lg-4">
+                <li class="list-group-item mx-auto pb-4 pb-md-3 pb-lg-0">
                     <a href="/"
                         class="{{ request()->path() === '/' ? 'navigation-link-active' : 'navigation-link' }} text-decoration-none rounded-pill px-3 py-2 d-flex align-self-center justify-content-center gap-2 px-md-4 py-md-3">
                         <img src="{{ URL('icons/navbar/home.svg') }}"
@@ -16,7 +16,7 @@
                             class="{{ request()->path() === '/' ? 'navigation-hidden-text-active' : 'navigation-hidden-text d-none' }} fs-4 fw-bold text-light">Beranda</span> --}}
                     </a>
                 </li>
-                <li class="list-group-item mx-auto">
+                <li class="list-group-item mx-auto pb-4 pb-md-3 pb-lg-0">
                     <a href="/flower"
                         class="{{ request()->path() === 'flower' || Str::is('show-plant*', request()->path()) ? 'navigation-link-active' : 'navigation-link' }} text-decoration-none rounded-pill px-3 py-2 d-flex align-self-center justify-content-center gap-2 px-md-4 py-md-3">
                         <img src="{{ URL('icons/navbar/flower.svg') }}"
@@ -26,7 +26,7 @@
                             class="{{ request()->path() === 'flower' ? 'navigation-hidden-text-active' : 'navigation-hidden-text d-none' }} fs-4 fw-bold text-light">Tanaman</span> --}}
                     </a>
                 </li>
-                <li class="list-group-item mx-auto">
+                <li class="list-group-item mx-auto pb-4 pb-md-3 pb-lg-0">
                     <a href="/history"
                         class="{{ request()->path() === 'history' ? 'navigation-link-active' : 'navigation-link' }} text-decoration-none rounded-pill px-3 py-2 d-flex align-self-center justify-content-center gap-2 px-md-4 py-md-3">
                         <img src="{{ URL('icons/navbar/history.svg') }}"
@@ -36,7 +36,7 @@
                             class="{{ request()->path() === 'history' ? 'navigation-hidden-text-active' : 'navigation-hidden-text d-none' }} fs-4 fw-bold text-light">Riwayat</span> --}}
                     </a>
                 </li>
-                <li class="list-group-item mx-auto">
+                <li class="list-group-item mx-auto pb-4 pb-md-3 pb-lg-0">
                     <a href="/favorite"
                         class="{{ request()->path() === 'favorite' ? 'navigation-link-active' : 'navigation-link' }} text-decoration-none rounded-pill px-3 py-2 d-flex align-self-center justify-content-center gap-2 px-md-4 py-md-3">
                         <img src="{{ URL('icons/navbar/heart.svg') }}"

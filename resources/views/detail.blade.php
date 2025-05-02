@@ -7,9 +7,9 @@
         <div class="container">
             <x-back headingTitle="Detail" linkTo="{{ route('flower') }}" />
             <div class="row justify-content-center px-0 position-relative min-h-screen">
-                <div id="detail-img" class=" height-image">
-                    <img src="{{ $data->images->count() > 0 ? $data->images[0]->image : URL('images/tanaman-1.png') }}" alt="..."
-                        class="img-fluid unzoom-image object-fit-cover" />
+                <div id="detail-img" class="height-image z-1">
+                    <img src="{{ $data->images->count() > 0 ? asset('images/' . $data->images[0]->image) : URL('images/tanaman-1.png') }}"
+                        alt="..." class="img-fluid unzoom-image z-0 object-fit-cover" />
                 </div>
 
                 <div class="col-12 z-1 bg-white-cust pt-3 px-4 border rounded-5 rounded-bottom-0 pb-5">
@@ -97,5 +97,19 @@
         };
 
         checkLikeStatus()
+
+
+        const detailImg = document.getElementById('detail-img');
+        const headingBack = document.getElementById('heading-back');
+
+        detailImg.addEventListener('click', () => {
+
+
+            detailImg.getElementsByTagName('img')[0].classList.toggle('zoom-image');
+            detailImg.getElementsByTagName('img')[0].classList.toggle('unzoom-image');
+            detailImg.classList.toggle('z-0');
+            detailImg.classList.toggle('z-3');
+            headingBack.classList.toggle('d-none');
+        });
     </script>
 </x-layout>
