@@ -75,3 +75,7 @@ document.querySelectorAll('.confirmation').forEach(button => {
   });
 
 });
+
+document.getElementById('profile-image').onchange = function () {
+  this.closest('form').submit();
+}

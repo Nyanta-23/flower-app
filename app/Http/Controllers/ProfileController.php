@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rules\Password;
 
 class ProfileController extends Controller
@@ -103,5 +104,32 @@ class ProfileController extends Controller
         $request->session()->regenerateToken();
 
         return Redirect::to('/login');
+    }
+
+
+    public function updateImage(Request $request): RedirectResponse
+    {
+
+        $user = $request->user();
+
+        if ($user->image) {
+            $oldImagePath = 'images/' . $user->image;
+            Storage::disk('public')->delete($oldImagePath);
+        }
+    
+        $file = $request->file('image');
+        $imageName = 'profile/' . time() . '.' . $request->image->extension();
+
+        $user->image = $imageName;
+        $user->save();
+
+
+        $file->storeAs('images/', $imageName, 'public');
+
+
+        return redirect()->back()->with('status', [
+            'icon' => 'success',
+            'text' => 'success-changing-image'
+        ]);
     }
 }

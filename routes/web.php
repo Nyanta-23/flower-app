@@ -53,6 +53,9 @@ Route::group(['middleware' => 'auth'], function () {
         Route::patch('/update-profile', [ProfileController::class, 'update'])->name('profile.update');
         Route::patch('/update-password', [ProfileController::class, 'updatePassword'])->name('profile.update-password');
         Route::delete('/delete', [ProfileController::class, 'destroy'])->name('profile.destroy');
+        Route::post('/image', [ProfileController::class, 'postImage'])->name('profile.image');
+        Route::patch('/update-image', [ProfileController::class, 'updateImage'])->name('profile.update-image');
+        // Route::delete('/delete-image', [ProfileController::class, 'deleteImage'])->name('profile.delete-image');
     });
 
     Route::prefix('plant')->group(function () {

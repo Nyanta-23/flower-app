@@ -44,7 +44,8 @@
                             <div class="app-utility-item app-user-dropdown dropdown">
                                 <a class="dropdown-toggle" id="user-dropdown-toggle" data-bs-toggle="dropdown"
                                     href="#" role="button" aria-expanded="false"><img
-                                        src="/theme/images/user.png" alt="user profile" /></a>
+                                        src="{{ !auth()->user()->image ? '/theme/images/user.png' : asset('/storage/images/' . auth()->user()->image) }}"
+                                        alt="user profile" /></a>
                                 <ul class="dropdown-menu" aria-labelledby="user-dropdown-toggle">
                                     <li>
                                         <a class="dropdown-item" href="{{ route('profile') }}">Profile</a>

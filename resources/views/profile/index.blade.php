@@ -31,12 +31,20 @@
                                         <div class="item-label mb-2"><strong>Photo</strong></div>
                                         <div class="item-data">
                                             <img class="profile-image"
-                                                src="{{ !$user->image ? '/theme/images/user.png' : $user->image }}"
+                                                src="{{ !$user->image ? '/theme/images/user.png' : asset('/storage/images/'. $user->image)  }}"
                                                 alt="{{ $user->name }}">
                                         </div>
                                     </div><!--//col-->
                                     <div class="col text-end">
-                                        <a class="btn-sm app-btn-secondary" href="#">Change</a>
+                                        <form action="{{ route('profile.update-image') }}" method="POST" enctype="multipart/form-data">
+                                            @csrf
+                                            @method('patch')
+
+                                            <label type="file" class="btn-sm app-btn-secondary"
+                                                style="cursor: pointer" for="profile-image">Change</label>
+                                            <input id="profile-image" type="file" class="d-none" accept="image/*"
+                                                name="image" />
+                                        </form>
                                     </div><!--//col-->
                                 </div><!--//row-->
                             </div><!--//item-->
