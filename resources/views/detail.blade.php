@@ -43,7 +43,7 @@
                         </div>
                     </div>
 
-                    <div class="mx-1 mb-5 fw-normal text-wrap detail-text fs-6 pb-5">
+                    <div class="mx-1 mb-5 fw-normal text-justify-to-child detail-text fs-6 pb-5">
                         {!! $data->description !!}
                     </div>
                 </div>
