@@ -12,6 +12,9 @@
 
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
     <script defer src="/theme/plugins/fontawesome/js/all.min.js"></script>
 
 
@@ -29,6 +32,10 @@
     @endif
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+
     <script src="js/script.js"></script>
 
     <script>
@@ -77,21 +84,26 @@
 
 
         let swiper = new Swiper(".mySwiper", {
-            zoom: true,
             loop: true
         });
 
-        // const swiper = new Swiper(".mySwiper", {
-        //     zoom: true,
-        //     navigation: {
-        //         nextEl: ".swiper-button-next",
-        //         prevEl: ".swiper-button-prev",
-        //     },
-        //     pagination: {
-        //         el: ".swiper-pagination",
-        //         clickable: true,
-        //     },
-        // });
+        Fancybox.bind("[data-fancybox]", {
+            Toolbar: {
+                display: {
+                    left: [],
+                    middle: ["download", "iterateZoom", "close"],
+                    right: [],
+                },
+            },
+            Image: {
+                zoom: true,
+                Panzoom: {
+                    maxScale: 2,
+                    zoom: true,
+                    touch: true
+                },
+            },
+        });
     </script>
     @stack('scripts')
 
