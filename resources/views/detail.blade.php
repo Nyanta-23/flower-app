@@ -2,17 +2,25 @@
 
     <x-slot:title>Detail</x-slot:title>
 
-
     <section class="mobile-wrapper">
         <div class="container">
             <x-back headingTitle="Detail" linkTo="{{ route('flower') }}" />
-            <div class="row justify-content-center px-0 position-relative min-h-screen">
-                <div id="detail-img" class="height-image z-1">
-                    <img src="{{ $data->images->count() > 0 ? asset('images/' . $data->images[0]->image) : URL('images/tanaman-1.png') }}"
-                        alt="..." class="img-fluid unzoom-image z-0 object-fit-cover" />
-                </div>
+            <div class="row justify-content-center px-0 position-relative max-h-screen">
 
-                <div class="col-12 z-1 bg-white-cust pt-3 px-4 border rounded-5 rounded-bottom-0 pb-5">
+                <div class="col-auto z-0 px-0">
+                <div class="swiper mySwiper px-0">
+                    <div class="swiper-wrapper">
+                        @foreach ($data->images as $asset)
+                            <div class="swiper-slide">
+                                <img src="{{ asset('images/' . $asset->image) }}" alt="..."
+                                    class="img-fluid w-100 h-100 object-fit-cover" />
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-12 bg-white-cust pt-3 px-4 border rounded-5 rounded-bottom-0 pb-5 z-1 card-overlay">
                     <div class="d-flex align-items-center justify-content-between gap-5 mb-4 pt-4">
 
                         <h1 class="fw-bold fs-3 mb-0">

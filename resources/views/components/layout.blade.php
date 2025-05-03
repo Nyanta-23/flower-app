@@ -11,9 +11,11 @@
 
 
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script defer src="/theme/plugins/fontawesome/js/all.min.js"></script>
 
-    {{-- @laravelPWA --}}
+
+    @laravelPWA
 </head>
 
 <body class="overflow-y-auto mobile-wrapper">
@@ -26,7 +28,9 @@
         <x-navbar />
     @endif
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+
     <script>
         // localStorage.getItem("token") == null ? window.location.href = "/" : "";
 
@@ -53,6 +57,7 @@
             const urlGetFavorite = "{{ route('get-favorite', '*') }}".replace("*", token)
             // fetch all favorites
             fetch(urlGetFavorite, {
+
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
@@ -69,8 +74,27 @@
         document.addEventListener('DOMContentLoaded', () => {
             fetchFavorites()
         });
+
+
+        let swiper = new Swiper(".mySwiper", {
+            zoom: true,
+            loop: true
+        });
+
+        // const swiper = new Swiper(".mySwiper", {
+        //     zoom: true,
+        //     navigation: {
+        //         nextEl: ".swiper-button-next",
+        //         prevEl: ".swiper-button-prev",
+        //     },
+        //     pagination: {
+        //         el: ".swiper-pagination",
+        //         clickable: true,
+        //     },
+        // });
     </script>
     @stack('scripts')
+
 </body>
 
 </html>
