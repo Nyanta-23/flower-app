@@ -422,3 +422,11 @@
 .card-overlay {
     margin-top: -50px !important;
 }
+
+.text-justify-to-child{
+    text-align: justify;
+}
+
+.text-justify-to-child p {
+    text-align: justify;
+}
