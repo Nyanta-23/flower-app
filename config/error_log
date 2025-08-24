@@ -1,0 +1,416 @@
+[25-May-2025 14:44:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/laravelpwa.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/laravelpwa.php on line 6
+[25-May-2025 14:44:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/app.php on line 16
+[25-May-2025 14:44:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/database.php on line 19
+[25-May-2025 14:44:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/cache.php on line 18
+[25-May-2025 14:44:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/auth.php on line 17
+[25-May-2025 14:44:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/session.php on line 21
+[25-May-2025 14:44:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/queue.php on line 16
+[25-May-2025 14:51:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/sanctum.php on line 18
+[25-May-2025 14:51:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/sanctum.php on line 18
+[25-May-2025 14:51:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/laravelpwa.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/laravelpwa.php on line 6
+[25-May-2025 14:51:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/database.php on line 19
+[25-May-2025 14:51:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/database.php on line 19
+[25-May-2025 14:51:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/mail.php on line 17
+[25-May-2025 14:51:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/auth.php on line 17
+[25-May-2025 14:51:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/auth.php on line 17
+[25-May-2025 14:51:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/mail.php on line 17
+[25-May-2025 14:51:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/database.php on line 19
+[25-May-2025 14:51:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/filesystems.php on line 16
+[25-May-2025 14:51:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/queue.php on line 16
+[25-May-2025 14:51:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/logging.php on line 21
+[25-May-2025 14:51:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/auth.php on line 17
+[25-May-2025 14:51:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/cache.php on line 18
+[25-May-2025 14:51:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/logging.php on line 21
+[25-May-2025 14:51:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/session.php on line 21
+[25-May-2025 14:51:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/session.php on line 21
+[25-May-2025 14:51:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/laravelpwa.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/laravelpwa.php on line 6
+[25-May-2025 14:51:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/laravelpwa.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/laravelpwa.php on line 6
+[25-May-2025 14:51:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/cache.php on line 18
+[25-May-2025 14:51:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/database.php on line 19
+[25-May-2025 14:51:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/mail.php on line 17
+[25-May-2025 14:51:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/cache.php on line 18
+[25-May-2025 14:51:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/mail.php on line 17
+[25-May-2025 14:51:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/queue.php on line 16
+[25-May-2025 14:51:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/filesystems.php on line 16
+[25-May-2025 14:51:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/app.php on line 16
+[25-May-2025 14:51:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/filesystems.php on line 16
+[25-May-2025 14:51:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/services.php on line 18
+[25-May-2025 14:51:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/sanctum.php on line 18
+[25-May-2025 14:51:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/app.php on line 16
+[25-May-2025 14:51:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/sanctum.php on line 18
+[25-May-2025 14:51:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/filesystems.php on line 16
+[25-May-2025 14:51:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/logging.php on line 21
+[25-May-2025 14:51:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/services.php on line 18
+[25-May-2025 14:51:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/logging.php on line 21
+[25-May-2025 14:51:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/session.php on line 21
+[25-May-2025 14:51:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/laravelpwa.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/laravelpwa.php on line 6
+[25-May-2025 14:51:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/cache.php on line 18
+[25-May-2025 14:51:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/app.php on line 16
+[25-May-2025 14:51:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/queue.php on line 16
+[25-May-2025 14:51:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/auth.php on line 17
+[25-May-2025 14:51:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/mail.php on line 17
+[25-May-2025 14:51:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/database.php on line 19
+[25-May-2025 14:51:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/sanctum.php on line 18
+[25-May-2025 14:51:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/session.php on line 21
+[25-May-2025 14:51:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/logging.php on line 21
+[25-May-2025 14:51:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/app.php on line 16
+[25-May-2025 14:51:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/filesystems.php on line 16
+[25-May-2025 14:51:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/services.php on line 18
+[25-May-2025 14:51:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/cache.php on line 18
+[25-May-2025 14:51:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/queue.php on line 16
+[25-May-2025 14:51:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/auth.php on line 17
+[25-May-2025 14:51:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/laravelpwa.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/laravelpwa.php on line 6
+[25-May-2025 14:52:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/logging.php on line 21
+[25-May-2025 14:53:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/database.php on line 19
+[25-May-2025 14:53:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/app.php on line 16
+[25-May-2025 14:53:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/laravelpwa.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/laravelpwa.php on line 6
+[25-May-2025 14:53:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/mail.php on line 17
+[25-May-2025 14:54:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/sanctum.php on line 18
+[25-May-2025 14:55:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/auth.php on line 17
+[25-May-2025 14:55:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/logging.php on line 21
+[25-May-2025 14:56:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/database.php on line 19
+[25-May-2025 14:56:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/mail.php on line 17
+[25-May-2025 14:56:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/filesystems.php on line 16
+[25-May-2025 14:56:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/app.php on line 16
+[25-May-2025 14:56:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/laravelpwa.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/laravelpwa.php on line 6
+[25-May-2025 14:56:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/cache.php on line 18
+[25-May-2025 14:57:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/queue.php on line 16
+[25-May-2025 14:57:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/sanctum.php on line 18
+[25-May-2025 14:57:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/session.php on line 21
+[25-May-2025 14:57:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/auth.php on line 17
+[25-May-2025 14:57:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/logging.php on line 21
+[25-May-2025 14:57:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/database.php on line 19
+[25-May-2025 14:58:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/mail.php on line 17
+[25-May-2025 14:58:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/filesystems.php on line 16
+[25-May-2025 14:58:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/app.php on line 16
+[25-May-2025 14:58:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/laravelpwa.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/laravelpwa.php on line 6
+[25-May-2025 14:59:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/cache.php on line 18
+[25-May-2025 14:59:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/queue.php on line 16
+[25-May-2025 14:59:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/sanctum.php on line 18
+[25-May-2025 14:59:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/session.php on line 21
+[25-May-2025 14:59:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/services.php on line 18
+[25-May-2025 14:59:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/auth.php on line 17
+[25-May-2025 15:00:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/logging.php on line 21
+[25-May-2025 15:00:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/database.php on line 19
+[25-May-2025 15:00:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/mail.php on line 17
+[25-May-2025 15:01:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/filesystems.php on line 16
+[25-May-2025 15:01:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/app.php on line 16
+[25-May-2025 15:01:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/laravelpwa.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/laravelpwa.php on line 6
+[25-May-2025 15:01:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/cache.php on line 18
+[25-May-2025 15:01:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/queue.php on line 16
+[25-May-2025 15:01:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/sanctum.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/sanctum.php on line 18
+[25-May-2025 15:01:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/session.php on line 21
+[25-May-2025 15:01:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/services.php on line 18
+[25-May-2025 15:01:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/ikraland/public_html/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/ikraland/public_html/config/auth.php on line 17

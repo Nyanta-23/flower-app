@@ -11,10 +11,18 @@ class PlantCategoryController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
+        $datas = Category::query();
+        if ($request->has('search')) {
+            $search = $request->input('search');
+            $datas->where('name', 'like', '%' . $search . '%')
+                  ->orWhere('description', 'like', '%' . $search . '%');
+        }
+        
+        // If you want to filter categories based on a search term
         return view('master.plant-category.index', [
-            'datas' => Category::paginate(10),
+            'datas' => $datas->paginate(10),
         ]);
     }
 

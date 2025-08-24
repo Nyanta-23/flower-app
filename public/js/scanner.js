@@ -224,7 +224,8 @@ if (reader != null) {
 
     imageEl.setAttribute('src', `/images/${data.images[0].image}`);
     titleEl.innerHTML = `${data.name} <br> (${data.scientific_name})`;
-    detailEl.textContent = data.description.substring(0, 100) + (data.description.length > 100 ? "..." : "");
+    // detailEl.innerHTML = data.description.substring(0, 100) + (data.description.length > 100 ? "..." : "");
+    detailEl.innerHTML = data.description;
     linkEl.setAttribute('href', `${detailUrl}/${data.slug}`);
 
     toggleNav();
