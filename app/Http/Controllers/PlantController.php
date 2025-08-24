@@ -32,7 +32,9 @@ class PlantController extends Controller
                 ->orWhere('soil_level', 'like', '%' . $search . '%')
                 ->orWhere('temprature_range', 'like', '%' . $search . '%')
                 ->orWhere('use_cases', 'like', '%' . $search . '%')
-                ->with('category');
+
+                ->with('category')
+                ->paginate(10);
         } else {
             $plants = Plant::with('category');
         }
@@ -42,7 +44,6 @@ class PlantController extends Controller
         } else {
             $plants = $plants->get();
         }
-
 
         return view('master.plant.index', [
             'plants' => $plants,
@@ -183,7 +184,7 @@ class PlantController extends Controller
             }
 
             $plant = Plant::findOrFail($id);
-            
+
             $plant->update(array_merge(
                 $request->only('name', 'category_id', 'scientific_name', 'habitat', 'growth_rate', 'watering_needs', 'sunlight_needs', 'soil_level', 'temprature_range', 'use_cases'),
                 [

@@ -17,6 +17,7 @@ use App\Http\Controllers\UserController;
 // });
 
 // Route::get('/test', fn() => view('test'));
+
 Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');
 Route::post('/login', [AuthenticatedSessionController::class, 'store']);
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
