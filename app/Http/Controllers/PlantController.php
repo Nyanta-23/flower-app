@@ -18,8 +18,6 @@ class PlantController extends Controller
     public function index(Request $request)
     {
         $search = $request->input('search');
-        $isPaging = $request->input('isPaging', true);
-
         if ($search) {
             $plants = Plant::query()
                 ->where('name', 'like', '%' . $search . '%')
@@ -32,17 +30,12 @@ class PlantController extends Controller
                 ->orWhere('soil_level', 'like', '%' . $search . '%')
                 ->orWhere('temprature_range', 'like', '%' . $search . '%')
                 ->orWhere('use_cases', 'like', '%' . $search . '%')
-                ->with('category');
-        } else {
-            $plants = Plant::with('category');
-        }
 
-        if ($isPaging) {
-            $plants = $plants->paginate(10);
+                ->with('category')
+                ->paginate(10);
         } else {
-            $plants = $plants->get();
+            $plants = Plant::with('category')->paginate(10);
         }
-
 
         return view('master.plant.index', [
             'plants' => $plants,

@@ -1,7 +1,7 @@
 /* Navbar */
 #scan-navbar {
   position: fixed;
-  height: 70vh;
+  height: 100vh;
   bottom: 0;
   /* left: 0; */
   z-index: 999;
@@ -225,9 +225,12 @@
 
 /* Scan Nav */
 .img-width-scan {
-  width: 100%;
-  height: auto;
-  object-fit: scale-down;
+  width: 80%;       /* kecilin */
+  height: auto;     
+  max-height: 40vh; /* biar nggak kepanjangan */
+  object-fit: contain;
+  margin: 0 auto;   /* tengah */
+  display: block;
 }
 
 /* Heading layout */
@@ -264,6 +267,11 @@
     padding-left: 0;
     padding-right: 0;
   }
+  
+   .img-width-scan {
+    width: 70%;
+    max-height: 35vh;
+  }
 }
 
 /* md */
@@ -293,9 +301,8 @@
   /* scan nav */
 
   .img-width-scan {
-    width: 100%;
-    height: auto;
-    object-fit: scale-down;
+    width: 60%;
+    max-height: 30vh;
   }
 
   #scan-navbar p {
@@ -330,9 +337,10 @@
   }
 
   .img-width-scan {
-    width: 100%;
-    height: max-content;
+    width: 50%;
+    max-height: 28vh;
   }
+
 }
 
 /* xl */
@@ -351,10 +359,19 @@
   .home-icons img {
     width: 2em !important;
   }
+  
+  .img-width-scan {
+    width: 40%;
+    max-height: 25vh;
+  }
 }
 
 /* xxl */
 @media (min-width: 1400px) {
+      .img-width-scan {
+    width: 35%;
+    max-height: 22vh;
+  }
 }
 
 @media (min-width: 0px) {
@@ -369,6 +386,13 @@
   .btn-back {
     max-width: calc(490px - 2.5rem);
   }
+  
+  /*  .img-width-scan {*/
+  /*  width: 100%;*/
+  /*  height: auto;*/
+  /*  max-height: 65vh;*/
+  /*  object-fit: contain;*/
+  /*}*/
 }
 
 @media (min-width: 600px) {
